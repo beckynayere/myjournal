@@ -7,11 +7,14 @@ import DetailsScreen from './screens/DetailsScreen';
 import JournalEntryScreen from './screens/JournalEntryScreen';
 import LoginScreen from './screens/LoginScreen';
 import SignupScreen from './screens/SignupScreen';
+import AppNavigator from './navigation';
+
 
 const Stack = createStackNavigator<RootStackParamList>();
 
 const App = () => {
   return (
+    // <AppNavigator />
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Login">
         <Stack.Screen name="Home" component={HomeScreen} />
@@ -21,6 +24,7 @@ const App = () => {
         <Stack.Screen name="Signup" component={SignupScreen} />
       </Stack.Navigator>
     </NavigationContainer>
+    
   );
 };
 
